@@ -5,22 +5,26 @@ class Triangle
     double side3 = 0.0;
     
 public:
+
+    Triangle();
     
     Triangle(double, double, double);
     
-    double setFirstSideLength(double);
+    void setFirstSideLength(double);
     
     double getFirstSideLength();
     
-    double setSecondSideLength(double);
+    void setSecondSideLength(double);
     
     double getSecondSideLength();
     
-    double setThirdSideLength(double);
+    void setThirdSideLength(double);
     
     double getThirdSideLength();
     
     double calculateTrianglePerimeter();
     
     double calculateTriangleSquare();
+    
+    void promptValues();
 };

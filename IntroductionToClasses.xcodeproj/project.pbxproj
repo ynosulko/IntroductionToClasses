@@ -11,6 +11,7 @@
 		15A5475D1A155F0500A36267 /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15A5475C1A155F0500A36267 /* Rectangle.cpp */; };
 		15CA90A71A05977B002D80DB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15CA90A61A05977B002D80DB /* main.cpp */; };
 		15D835861A1748B700B99767 /* Circle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15D835851A1748B700B99767 /* Circle.cpp */; };
+		2D47897E1A2675DC00F9DD8A /* Menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D47897C1A2675DC00F9DD8A /* Menu.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		15CA90A61A05977B002D80DB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		15D835841A17482B00B99767 /* Circle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
 		15D835851A1748B700B99767 /* Circle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Circle.cpp; sourceTree = "<group>"; };
+		2D47897C1A2675DC00F9DD8A /* Menu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Menu.cpp; sourceTree = "<group>"; };
+		2D47897D1A2675DC00F9DD8A /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +53,8 @@
 		15CA909A1A05977A002D80DB = {
 			isa = PBXGroup;
 			children = (
+				2D47897C1A2675DC00F9DD8A /* Menu.cpp */,
+				2D47897D1A2675DC00F9DD8A /* Menu.h */,
 				15D835851A1748B700B99767 /* Circle.cpp */,
 				15D835841A17482B00B99767 /* Circle.h */,
 				15A5475B1A155ED600A36267 /* Rectangle.h */,
@@ -137,6 +142,7 @@
 				15D835861A1748B700B99767 /* Circle.cpp in Sources */,
 				15A547591A155D7F00A36267 /* Triangle.cpp in Sources */,
 				15A5475D1A155F0500A36267 /* Rectangle.cpp in Sources */,
+				2D47897E1A2675DC00F9DD8A /* Menu.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

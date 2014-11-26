@@ -1,5 +1,10 @@
 #include "Triangle.h"
 #include <math.h>
+#include <iostream>
+
+using namespace std;
+
+Triangle::Triangle(){}
 
 Triangle::Triangle(double s1, double s2, double s3)
 {
@@ -8,9 +13,9 @@ Triangle::Triangle(double s1, double s2, double s3)
     side3 = s3;
 }
 
-double Triangle::setFirstSideLength(double length)
+void Triangle::setFirstSideLength(double length)
 {
-    return side1 = length;
+    side1 = length;
 }
 
 double Triangle::getFirstSideLength()
@@ -18,9 +23,9 @@ double Triangle::getFirstSideLength()
     return side1;
 }
 
-double Triangle::setSecondSideLength(double length)
+void Triangle::setSecondSideLength(double length)
 {
-    return side2 = length;
+    side2 = length;
 }
 
 double Triangle::getSecondSideLength()
@@ -28,9 +33,9 @@ double Triangle::getSecondSideLength()
     return side2;
 }
 
-double Triangle::setThirdSideLength(double length)
+void Triangle::setThirdSideLength(double length)
 {
-    return side3 = length;
+    side3 = length;
 }
 
 double Triangle::getThirdSideLength()
@@ -49,5 +54,15 @@ double Triangle::calculateTriangleSquare()
     double perim = calculateTrianglePerimeter();
     double sqr = sqrt(perim * (perim - side1) * (perim - side2) * (perim - side3));
     return sqr;
+}
+
+void Triangle::promptValues()
+{
+    cout << "Enter 3 side lengths of the Triangle. Hit Enter to submit each value" << endl;
+    int s1, s2, s3;
+    cin >> s1 >> s2 >> s3;
+    setFirstSideLength(s1);
+    setSecondSideLength(s2);
+    setThirdSideLength(s3);
 }
 

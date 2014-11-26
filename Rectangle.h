@@ -5,17 +5,21 @@ class Rectangle
     
 public:
     
+    Rectangle();
+    
     Rectangle(double, double);
     
-    double setFirstSideLength(double);
+    void setFirstSideLength(double);
     
     double getFirstSideLength();
     
-    double setSecondSideLength(double);
+    void setSecondSideLength(double);
     
     double getSecondSideLength();
     
     double calculateRectanglePerimeter();
     
     double calculateRectangleSquare();
+
+    void promptValues();
 };

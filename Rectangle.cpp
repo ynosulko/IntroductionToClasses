@@ -1,4 +1,9 @@
 #include "Rectangle.h"
+#include <iostream>
+
+using namespace std;
+
+Rectangle::Rectangle(){}
 
 Rectangle::Rectangle(double s1, double s2)
 {
@@ -6,9 +11,9 @@ Rectangle::Rectangle(double s1, double s2)
     side2 = s2;
 }
 
-double Rectangle::setFirstSideLength(double length)
+void Rectangle::setFirstSideLength(double length)
 {
-    return side1 = length;
+    side1 = length;
 }
 
 double Rectangle::getFirstSideLength()
@@ -16,9 +21,9 @@ double Rectangle::getFirstSideLength()
     return side1;
 }
 
-double Rectangle::setSecondSideLength(double length)
+void Rectangle::setSecondSideLength(double length)
 {
-    return side2 = length;
+    side2 = length;
 }
 
 double Rectangle::getSecondSideLength()
@@ -36,4 +41,13 @@ double Rectangle::calculateRectangleSquare()
 {
     double sqr = side1 * side2;
     return sqr;
+}
+
+void Rectangle::promptValues()
+{
+    cout << "Enter 2 side lengths of the Rectangle. Hit Enter to submit each value" << endl;
+    int s1, s2;
+    cin >> s1 >> s2;
+    setFirstSideLength(s1);
+    setSecondSideLength(s2);
 }

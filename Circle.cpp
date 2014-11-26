@@ -2,15 +2,20 @@
 
 #include "Circle.h"
 #include <math.h>
+#include <iostream>
+
+using namespace std;
+
+Circle::Circle(){}
 
 Circle::Circle(double rad)
 {
     radius = rad;
 }
 
-double Circle::setRadius(double length)
+void Circle::setRadius(double length)
 {
-    return radius = length;
+    radius = length;
 }
 
 double Circle::getRadius()
@@ -28,4 +33,12 @@ double Circle::calculateCircleSquare()
 {
     double sqr = M_PI * pow(radius, 2);
     return sqr;
+}
+
+void Circle::promptValues()
+{
+    cout << "Enter Circle radius lengths. Hit Enter to submit the value" << endl;
+    int r;
+    cin >> r;
+    setRadius(r);
 }
